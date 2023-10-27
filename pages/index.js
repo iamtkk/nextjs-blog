@@ -11,13 +11,23 @@ export async function getServerSideProps() {
 
 export default function Home({ time }) {
   return (
-    <main>
+    <>
       <h1 className={styles.title}>{time}</h1>
       <h1>
         <Link href="/csr" legacyBehavior>
           <a>CSR로</a>
         </Link>
       </h1>
-    </main>
+      <h1>
+        <Link href="/ssg" legacyBehavior>
+          <a>SSG로</a>
+        </Link>
+      </h1>
+      <h1>
+        <Link href="/isr" legacyBehavior>
+          <a>ISR로</a>
+        </Link>
+      </h1>
+    </>
   );
 }
