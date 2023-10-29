@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
 export async function getServerSideProps() {
@@ -12,7 +11,7 @@ export async function getServerSideProps() {
 export default function Home({ time }) {
   return (
     <>
-      <h1 className={styles.title}>{time}</h1>
+      <h1 className="title">{time}</h1>
       <h1>
         <Link href="/csr" legacyBehavior>
           <a>CSR로</a>
